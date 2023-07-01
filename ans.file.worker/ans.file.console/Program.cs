@@ -16,8 +16,10 @@ if (fileBytes is not null)
     // Ejemplo: Guardar el archivo en disco
     File.WriteAllBytes("archivo_descargado.pdf", fileBytes);
 
-    // Ejemplo: Enviar el archivo como respuesta HTTP
-    // Aquí necesitarías usar un framework o tecnología específica para enviar el archivo como respuesta HTTP en tu contexto particular
+    // Ejemplo: guarda el archivo en memoria.
+    string str = Convert.ToBase64String(fileBytes);
+
+    
 }
 
 Console.ReadLine();
